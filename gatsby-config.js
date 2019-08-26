@@ -5,5 +5,18 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "Blog Home",
+    author: "Dhaval Kaneriya",
+  },
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: "4s3eah8h8l2h",
+        accessToken: "z_E4HckTE6Ss09UD5zAUHn1xBzNfVmTdjQCGxIpMsjw",
+      },
+    },
+  ],
 }
